@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        img{
+            width: 80px;
+            height: 200px;
+        }
+
+        .image {
+            width: 80px;
+            height: 200px;
+
+            /* background-color: #000000; */
+            
+            margin-right: 5px;
+            float: left;
+        }
+
+        div#box{
+            overflow: hidden;
+        }
+        
+        div#box > div {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }   
+
+        div#box > div.image:nth-child(1){
+            /* background-color: #ff0000; */
+            background-image: url('1.jpg');
+        }
+        div#box > div.image:nth-child(2){
+            /* background-color: #0000FF; */
+            background-image: url('2.jpg');     
+        }
+        div#box > div.image:nth-child(3){
+            /* background-color: #00FF00; */
+            background-image: url('3.jpg');
+        }
+    </style>
+</head>
+<body>
+    <img src="1.jpg"/>
+    <img src="2.jpg"/>
+    <img src="3.jpg"/>
+    <hr />
+    <div id="box">
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+    </div>
+</body>
+</html>
