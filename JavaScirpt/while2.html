@@ -7,24 +7,20 @@
 </head>
 <body>
     
-
     <script>
         let item = ["이름","나이","전화번호","이메일"];
 
         let input =[];
         let flag=true;
 
-
         while(flag){
 
             flag=false;
             
-            for(let i=0; i<4; i++){
-                input[i] = prompt(item[i]+"를 입력하시오.");
-                flag=flag || !input[i];
-            }
-        
-            flag=!(input[0]&&input[1]&&input[2]&&input[3])
+            for(let i=0;i<4;i++){
+                input[i] = prompt(item[i]+"를 입력하시오.");   
+                flag=flag || !input[i];             
+            }           
         }
 
         console.log(input);

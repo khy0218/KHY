@@ -7,10 +7,24 @@
 </head>
 <body>
     
-
     <script>
         let menu = prompt("A,B,C,D,E 중 아무거나 입력하세요.");
         let message = "";
+
+
+        // if(menu == "A"){
+        //     message = "아메리카노";
+        // }else if(menu == "B"){
+        //     message = "카페라떼";
+        // }else if(menu == "C"){
+        //     message = "카페모카";
+        // }else if(menu == "D"){
+        //     message = "에스프레소";
+        // }else if(menu == "E"){
+        //     message = "카라멜마키야또";
+        // }else{
+        //     message = "입력이 올바르지 않습니다.";
+        // }
 
         switch(menu){
             case "A":
@@ -26,13 +40,14 @@
                 message += "에스프레소,";
                 break;
             case "E":
-                message = "캬라멜마키아또,";
+                message += "카라멜마키야또,";
                 break;
-            default: message = "입력이 올바르지 않습니다.,";
+            default:
+                message += "입력이 올바르지 않습니다.";
         }
 
-        alert(message)
 
+        alert(message);
     </script>
 </body>
 </html>
